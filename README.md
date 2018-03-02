@@ -1,2 +1,2 @@
-# haskell-learn
-My Haskell adventures.
+### haskell-learn
+My adventures with Haskell
