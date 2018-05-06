@@ -1,8 +1,10 @@
 --string2int - converts a String into a whole number. e.g.
 --             string2int "356" yields 356
 --             string2int "-341" yields -341
+
 import Data.Char
 
+string2int :: [Char] -> Int
 string2int [] = 0
 string2int (x:xs) =
     if x == '-'
