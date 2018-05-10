@@ -9,4 +9,4 @@ isHeap (Node _ Empty Empty) = True
 isHeap (Node x (Node y t1 t2) Empty) = x >= y && isHeap (Node y t1 t2)
 isHeap (Node x Empty (Node y t1 t2)) = x >= y && isHeap (Node y t1 t2)
 isHeap (Node x (Node y t1 t2) (Node z t3 t4)) = 
-    x >= y && x >= z && isHeap (Node y t1 t2) && isHeap (Node z t3 t4)
+    x >= (max y z) && isHeap (Node y t1 t2) && isHeap (Node z t3 t4)
