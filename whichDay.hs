@@ -3,6 +3,7 @@
 
 data Day = Mon|Tue|Wed|Thu|Fri|Sat|Sun deriving Show
 
+whichDay :: Day -> Int -> Day
 whichDay weekday date =
     case weekday of Mon -> listOfDays !! (date `mod` 7 - 1)
                     Tue -> listOfDays !! (date `mod` 7)
